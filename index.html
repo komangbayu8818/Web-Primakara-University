@@ -1,0 +1,412 @@
+<!doctype html>
+<html class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link href="./src/output.css" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body class="font-dm bg-gray-50 text-[#1D2B58] overflow-x-hidden">
+
+        <nav data-aos='fade-down' data-aos-delay="200" class="sticky top-0 bg-[#ecfefe] w-full h-20 flex justify-center shadow-sm font-dm z-50">
+            
+            <div class="w-full max-w-7xl flex items-center justify-between px-6 md:px-10">
+                
+                <a href="/index.html" class="flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="165" height="48" viewBox="0 0 209 50" fill="none">
+                        <g clip-path="url(#a)"><path fill="#1D2B58" d="m11.802 19.69 3.435-5.88H0l1.085 3.421A3.497 3.497 0 0 0 4.41 19.69h7.391ZM41.629 13.82h-15.13l-3.434 5.875h17.846a.258.258 0 0 1 .225.381.237.237 0 0 1-.09.089l-4.3 2.582v6.84l7.892-4.745a5.782 5.782 0 0 0 2.882-5.02c0-2.95-2.209-6.002-5.891-6.002ZM12.854 37.19l-5.576 9.555c-.271.57.1.542.444.382l.775-.473 18.491-11.17v-6.843l-14.134 8.548Z"></path><path fill="#009EA9" d="M28.966 21.673V43.54a3.703 3.703 0 0 0 2.43 3.357c.845.284 3.389 1.095 3.389 1.095V21.668l-5.819.005ZM28.483 6.54a.243.243 0 0 1 .217-.125.258.258 0 0 1 .259.258v5.166h5.818V5.943c0-3.72-3.016-5.94-5.94-5.94a5.681 5.681 0 0 0-4.977 2.905L2.942 38.68a3.995 3.995 0 0 0-.212 3.615l2.087 4.76L28.483 6.539ZM78.059 47.695a2.066 2.066 0 0 1-2.066-2.066v-8.62h2.172v8.006a.775.775 0 0 0 .774.774h2.952a.775.775 0 0 0 .775-.774v-8.007h2.175v8.621a2.066 2.066 0 0 1-2.066 2.066h-4.716ZM95.32 47.695l-4.178-7.14v7.14H88.97V37.008h2.513l4.179 7.139v-7.139h2.174v10.687h-2.515ZM104.205 37.008h-2.175v10.687h2.175V37.008ZM112.043 47.695l-4.388-10.687h2.299l3.254 8.007 3.254-8.007h2.298l-4.387 10.687h-2.33ZM122.213 47.695V37.008h7.676v1.816h-5.504v2.562h5.214v1.816h-5.214v2.675h5.504v1.818h-7.676ZM140.609 47.695l-1.963-3.571h-2.544v3.571h-2.174V37.008h6.802a2.065 2.065 0 0 1 2.067 2.067v2.985a2.07 2.07 0 0 1-1.491 1.983l-.281.08 1.97 3.572h-2.386Zm-4.507-5.47h3.735a.777.777 0 0 0 .775-.774v-1.749a.776.776 0 0 0-.775-.775h-3.735v3.298ZM148.974 47.695a2.067 2.067 0 0 1-2.066-2.066v-1.157h2.172v.54a.776.776 0 0 0 .775.775h3.099a.677.677 0 0 0 .731-.68v-.73c0-.584-.969-.816-2.436-1.168-1.838-.439-4.359-1.033-4.359-2.458v-1.676a2.068 2.068 0 0 1 2.066-2.067h4.708a2.065 2.065 0 0 1 2.066 2.067v1.133h-2.174v-.516a.802.802 0 0 0-.775-.775h-2.965a.679.679 0 0 0-.733.682v.69c0 .565.96.8 2.414 1.154 1.849.45 4.391 1.067 4.391 2.464v1.733a2.068 2.068 0 0 1-2.066 2.066l-4.848-.01ZM162.163 37.008h-2.174v10.687h2.174V37.008ZM169.273 47.695v-8.87h-3.347v-1.817h8.866v1.816h-3.347v8.871h-2.172ZM182.023 47.695v-3.848l-3.734-6.839h2.105l2.717 5.096 2.714-5.096h2.107l-3.734 6.84v3.847h-2.175Z"></path><path fill="#1D2B58" d="M93.704 14.047H89.89v17.616h3.814V14.047ZM86.623 25.797V16.32a2.273 2.273 0 0 0-2.27-2.272H71.977v17.618h3.814V17.417h7.04v5.09h-5.384l5.049 9.158h4.183l-3.238-5.867h3.182ZM66.535 14.047H54.198v17.618h3.815V17.652l.026-.235h7.042v5.256h-4.984l1.86 3.357 6.859-.023v-9.703a2.275 2.275 0 0 0-2.28-2.257ZM106.813 25.743l-5.229-11.696h-3.983v17.618h3.815v-8.85l.007-1.075 4.497 9.925h1.784l4.429-9.819-.007 1.105v8.714h3.814V14.047h-3.897l-5.23 11.696ZM128.096 14.047h-2.768l-7.182 17.618h4.039l1.214-3.238h7.825l1.214 3.238h4.041l-6.732-16.51a1.775 1.775 0 0 0-1.651-1.108Zm-3.476 11.562 2.702-7.53 2.691 7.525-5.393.005ZM163.901 14.047h-2.776l-7.182 17.618h4.042l1.214-3.238h7.825l1.214 3.238h4.039l-6.733-16.51a1.769 1.769 0 0 0-1.643-1.108Zm-3.481 11.562 2.691-7.53 2.691 7.53h-5.382ZM201.925 15.155a1.77 1.77 0 0 0-1.645-1.108h-2.774l-7.169 17.618h4.039l1.216-3.238h7.823l1.214 3.238h4.042l-6.746-16.51Zm-5.132 10.454 2.697-7.53 2.691 7.525-5.388.005ZM188.751 25.797V16.32a2.276 2.276 0 0 0-2.273-2.272h-12.373v17.618h3.815V17.417h7.04v5.09h-5.385l1.862 3.358 3.177 5.787h4.184l-3.229-5.855h3.182ZM146.515 22.469l7.428-8.422h-4.907l-7.35 8.422v-8.422h-3.817v17.618h3.817v-3.719l3.585-4.065 3.571 7.743h4.326l-4.135-9.155h-2.518Z"></path></g>
+                        <defs><clipPath id="a"><path fill="#fff" d="M0 0h208.658v48H0z"></path></clipPath></defs>
+                    </svg>
+                </a>
+
+                <div class="flex items-center gap-6 md:gap-10">
+                    <div class="relative group h-20 flex items-center">
+                        <a href="#stand" class="flex items-center text-[#042038] font-medium group-hover:text-[#0c426e]">
+                            Stand
+                            <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+
+                        <div class="absolute top-20 left-0 w-64 bg-white shadow-xl opacity-0 invisible translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 z-200 rounded-b-xl border-t-2 border-[#042038] overflow-hidden">
+                            <a href="#dokumentasi" class="flex items-center px-6 py-4 text-[#002244] hover:bg-[#ecfefe] group/item transition-colors">
+                                <span class="mr-3 opacity-0 -translate-x-2 transition-all duration-300 group-hover/item:opacity-100 group-hover/item:translate-x-0">→</span>
+                                <span>Dokumentasi</span>
+                            </a>
+                            <a href="#kegiatan" class="flex items-center px-6 py-4 text-[#002244] hover:bg-[#ecfefe] group/item transition-colors border-t border-gray-50">
+                                <span class="mr-3 opacity-0 -translate-x-2 transition-all duration-300 group-hover/item:opacity-100 group-hover/item:translate-x-0">→</span>
+                                <span>Kegiatan</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#jurusan" class="text-[#042038] font-medium hover:text-[#0c426e] transition-colors">
+                        Jurusan
+                    </a>
+
+                    <a href="#pendaftaran" class="bg-[#042038] text-white px-5 py-2.5 rounded-lg font-bold hover:bg-[#0c426e] transition-all whitespace-nowrap">
+                        Daftar Sekarang!
+                    </a>
+                </div>
+            </div>
+        </nav><!-- Ini Error ntar FIX-->
+
+        <header id="dokumentasi" class="bg-[#ecfefe] py-16 px-6">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div data-aos="fade-right" data-aos-delay="200" class="md:w-1/2 space-y-6">
+                    <span class="bg-[#009EA9]/10 text-[#009EA9] px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Pameran DTIK FEST 2026</span>
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                        Dokumentasi Kreativitas <span class="text-[#009EA9]">Stand Primakara University</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Menelusuri jejak inovasi dan antusiasme pengunjung di pameran tahun ini. Dari teknologi terbaru hingga instalasi seni yang memukau.
+                    </p>
+                    <div class="flex gap-4 cursor-pointer">
+                        <a href='#kegiatan' class="border-2 border-[#1D2B58] px-8 py-3 rounded-xl font-bold hover:bg-[#1D2B58] hover:text-white transition-all">Lihat Kegiatan</a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" data-aos-delay="200" class="md:w-1/2 relative">
+                    <div class="bg-gray-200 w-full h-[400px] rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="./src/images/dtikfest.jpeg" alt="Stand Pameran" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl hidden md:block">
+                        <p class="text-sm font-bold text-gray-400">Total Pengunjung</p>
+                        <p class="text-3xl font-bold text-[#009EA9]">1.250++</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto py-20 px-6">
+            <div data-aos="fade-right" data-aos-delay="250" class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold">Kegiatan Pameran</h2>
+                    <div class="h-1.5 w-20 bg-[#009EA9] mt-2 rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8" id="kegiatan">
+                <article data-aos="flip-right" data-aos-delay="250" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
+                    <div class="h-52 overflow-hidden">
+                        <img src="./src/images/chatbot.webp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Blog">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <p class="text-[#009EA9] text-sm font-bold uppercase">Teknologi</p>
+                        <h3 class="text-xl font-bold leading-snug group-hover:text-[#009EA9] transition-colors">Mengenal Stellar, Chatbot AI Berbasis Suara</h3>
+                        <p class="text-gray-500 text-sm line-clamp-3">Bagaimana tim kami mengintegrasikan kecerdasan buatan untuk berinteraksi dengan pengunjung pameran secara real-time.</p>
+                    </div>
+                </article>
+
+                <article data-aos="flip-right" data-aos-delay="400" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
+                    <div class="h-52 overflow-hidden">
+                        <img src="./src/images/dtikfest.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Blog">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <p class="text-[#009EA9] text-sm font-bold uppercase">Teknologi</p>
+                        <h3 class="text-xl font-bold leading-snug group-hover:text-[#009EA9] transition-colors">Menjelajahi Midnight Toy, Mahakarya Horor Palm Studio</h3>
+                        <p class="text-gray-500 text-sm line-clamp-3">Aktivitas paling populer yang membuat pengunjung bertahan lama di stand kami sepanjang hari.</p>
+                    </div>
+                </article>
+
+                <article data-aos="flip-right" data-aos-delay="400" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
+                    <div class="h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Blog">
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <p class="text-[#009EA9] text-sm font-bold uppercase">Event</p>
+                        <h3 class="text-xl font-bold leading-snug group-hover:text-[#009EA9] transition-colors">Keseruan Games & Workshop Interaktif</h3>
+                        <p class="text-gray-500 text-sm line-clamp-3">Aktivitas paling populer yang membuat pengunjung bertahan lama di stand kami sepanjang hari.</p>
+                    </div>
+                </article>
+                
+            </div>
+
+            <section id="jurusan" class="py-24 bg-white font-dm">
+                <div class="max-w-7xl mx-auto px-6 md:px-10">
+                    
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                        <div data-aos="fade-right" data-aos-delay="250" class="max-w-2xl">
+                            <span class="text-[#009EA9] font-bold uppercase tracking-widest text-sm inline-block mb-3">Program Studi S1</span>
+                            <h2 class="text-[#1D2B58] text-4xl md:text-5xl font-bold leading-tight">
+                                Teknologi Informasi <br> <span class="text-[#009EA9]">Primakara University</span>
+                            </h2>
+                        </div>
+                        <p data-aos="fade-left" data-aos-delay="250" class="text-slate-500 md:max-w-xs leading-relaxed">
+                            Mencetak tenaga profesional yang siap menghadapi tantangan industri digital global dengan kurikulum berbasis praktik.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        
+                        <div data-aos="fade-right" data-aos-delay="250" class="md:col-span-2 bg-[#ecfefe] rounded-3xl p-8 md:p-12 relative overflow-hidden group border border-[#009EA9]/10">
+                            <div class="relative z-10">
+                                <h3 class="text-[#1D2B58] text-2xl font-bold mb-4">Kurikulum Berbasis Industri</h3>
+                                <p class="text-slate-600 max-w-md mb-8">
+                                    Kami fokus pada pengembangan <span class="font-bold text-[#1D2B58]">Software Architecture</span>, <span class="font-bold text-[#1D2B58]">Cyber Security</span>, dan <span class="font-bold text-[#1D2B58]">Cloud Management</span> yang relevan dengan kebutuhan startup saat ini.
+                                </p>
+                                <a href="/kurikulum" class="inline-flex items-center text-[#1D2B58] font-bold group/link">
+                                    Lihat Jalur Spesialisasi
+                                    <span class="ml-2 transition-transform group-hover/link:translate-x-2">→</span>
+                                </a>
+                            </div>
+                            <div class="absolute right-[-20px] bottom-[-20px] opacity-10 group-hover:scale-110 transition-transform duration-500">
+                                <svg width="200" height="200" fill="currentColor" viewBox="0 0 24 24" class="text-[#1D2B58]">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-left" data-aos-delay="250" class="bg-[#1D2B58] rounded-3xl p-8 text-white flex flex-col justify-between hover:bg-[#0c426e] transition-colors">
+                            <div>
+                                <h3 class="text-teal-accent text-xl font-bold mb-2">Prospek Karir</h3>
+                                <p class="text-white/70 text-sm italic">"9 dari 10 lulusan IT Primakara bekerja sebelum wisuda."</p>
+                            </div>
+                            <div class="mt-10">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-5xl font-bold">50+</span>
+                                    <span class="text-teal-accent font-medium">Mitra</span>
+                                </div>
+                                <p class="text-white/50 text-xs uppercase tracking-tighter mt-1">Perusahaan Teknologi & Startup</p>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-right" data-aos-delay="250" class="bg-white border-2 border-[#ecfefe] rounded-3xl p-8 hover:border-[#009EA9]/30 transition-all group">
+                            <div class="w-12 h-12 bg-[#ecfefe] rounded-xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform">
+                                <span class="text-2xl">⚡</span>
+                            </div>
+                            <h4 class="text-[#1D2B58] font-bold text-xl mb-3">Core Skills</h4>
+                            <ul class="text-slate-500 text-sm space-y-2">
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 bg-[#009EA9] rounded-full"></span> Fullstack Development
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 bg-[#009EA9] rounded-full"></span> Network Defense
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 bg-[#009EA9] rounded-full"></span> Database Expert
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div data-aos="fade-left" data-aos-delay="250" class="md:col-span-2 bg-[#009EA9] rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between text-white overflow-hidden relative group">
+                            <div class="relative z-10">
+                                <h3 class="text-2xl font-bold">Siap Menjadi Engineer Handal?</h3>
+                                <p class="text-white/80">Bergabunglah dengan ekosistem digital terbaik di Bali.</p>
+                            </div>
+                            <a href="#pendaftaran" class="relative z-10 mt-6 md:mt-0 bg-[#1D2B58] text-white px-8 py-4 rounded-2xl font-bold shadow-xl hover:scale-105 transition-transform">
+                                Daftar Sekarang
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="peminatan-it" class="py-24 bg-gradient-to-b from-white to-[#ecfefe]/50 font-dm relative">
+                <div class="max-w-7xl mx-auto px-6 md:px-10">
+                    
+                    <div data-aos="fade-down" data-aos-delay="250" class="text-center max-w-2xl mx-auto mb-16">
+                        <span class="text-[#009EA9] font-bold uppercase tracking-widest text-sm block mb-3">Peminatan Mahasiswa</span>
+                        <h2 class="text-[#1D2B58] text-4xl md:text-5xl font-bold mb-6">Pilih Jalur Spesialisasimu</h2>
+                        <p class="text-slate-500 text-lg leading-relaxed">
+                            Di tahun ketiga, kamu akan memilih satu dari tiga fokus keahlian yang paling sesuai dengan passion dan target karirmu di dunia teknologi.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        
+                        <div data-aos="fade-down" data-aos-delay="250" class="relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group border border-gray-100 overflow-hidden cursor-pointer">
+                            <div class="absolute top-0 left-0 w-full h-1.5 bg-[#009EA9] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+                            
+                            <div class="w-16 h-16 bg-[#ecfefe] rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#1D2B58] transition-colors duration-500">
+                                <svg class="w-8 h-8 text-[#009EA9] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            </div>
+                            
+                            <h3 class="text-[#1D2B58] text-2xl font-bold mb-3">Software Engineering</h3>
+                            <p class="text-slate-500 mb-6 line-clamp-3">
+                                Belajar merancang, membangun, dan mengelola aplikasi skala besar untuk Web dan Mobile dengan arsitektur modern.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-lg group-hover:bg-[#ecfefe] transition-colors">React</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-lg group-hover:bg-[#ecfefe] transition-colors">Flutter</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-lg group-hover:bg-[#ecfefe] transition-colors">Node.js</span>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-down" data-aos-delay="250" class="relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group border border-gray-100 overflow-hidden cursor-pointer">
+                            <div class="absolute top-0 left-0 w-full h-1.5 bg-[#009EA9] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+                            
+                            <div class="w-16 h-16 bg-[#ecfefe] rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#1D2B58] transition-colors duration-500">
+                                <svg class="w-8 h-8 text-[#009EA9] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            </div>
+                            
+                            <h3 class="text-[#1D2B58] text-2xl font-bold mb-3">Network & Security</h3>
+                            <p class="text-slate-500 mb-6 line-clamp-3">
+                                Kuasai seni pertahanan siber, ethical hacking, dan manajemen infrastruktur jaringan cloud yang aman dari serangan.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-lg group-hover:bg-[#ecfefe] transition-colors">Linux</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-lg group-hover:bg-[#ecfefe] transition-colors">Python</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-lg group-hover:bg-[#ecfefe] transition-colors">AWS</span>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-down" data-aos-delay="250" class="relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group border border-gray-100 overflow-hidden cursor-pointer">
+                            <div class="absolute top-0 left-0 w-full h-1.5 bg-[#009EA9] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+                            
+                            <div class="w-16 h-16 bg-[#ecfefe] rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#1D2B58] transition-colors duration-500">
+                                <svg class="w-8 h-8 text-[#009EA9] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                            </div>
+                            
+                            <h3 class="text-[#1D2B58] text-2xl font-bold mb-3">AI & Data Science</h3>
+                            <p class="text-slate-500 mb-6 line-clamp-3">
+                                Ubah data menjadi keputusan strategis. Pelajari Machine Learning, Deep Learning, dan analisis Big Data.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-lg group-hover:bg-[#ecfefe] transition-colors">TensorFlow</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-lg group-hover:bg-[#ecfefe] transition-colors">SQL</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-lg group-hover:bg-[#ecfefe] transition-colors">Python</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="pendaftaran" class="py-24 bg-[#1D2B58] font-dm relative overflow-hidden">
+                <div class="absolute -top-40 -right-40 w-96 h-96 bg-[#009EA9] rounded-full mix-blend-screen filter blur-[100px] opacity-30"></div>
+                <div class="absolute bottom-0 left-0 w-72 h-72 bg-[#ecfefe] rounded-full mix-blend-overlay filter blur-[80px] opacity-10"></div>
+
+                <div class="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+                    <div class="grid lg:grid-cols-2 gap-16 items-center">
+                        
+                        <div class="text-white space-y-8">
+                            <div data-aos="fade-right" data-aos-delay="250">
+                                <span class="text-[#009EA9] font-bold uppercase tracking-widest text-sm inline-block mb-3 bg-[#009EA9]/10 px-4 py-1 rounded-full">
+                                    Pendaftaran 2026/2027
+                                </span>
+                                <h2 class="text-4xl md:text-5xl md:leading-tight font-bold mb-6">
+                                    Mulai Perjalanan <br> Digitalmu Hari Ini.
+                                </h2>
+                                <p class="text-white/70 text-lg leading-relaxed max-w-md">
+                                    Bergabunglah dengan ekosistem IT terbaik di Bali. Isi formulir singkat ini, dan tim admisi kami akan segera memandu langkahmu selanjutnya.
+                                </p>
+                            </div>
+
+                            <div data-aos="fade-right" data-aos-delay="250" class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm max-w-md">
+                                <h4 class="font-bold text-lg mb-4">Butuh Bantuan?</h4>
+                                <ul class="space-y-4">
+                                    <li class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-[#009EA9]/20 rounded-full flex items-center justify-center text-[#009EA9]">
+                                            📞
+                                        </div>
+                                        <div>
+                                            <p class="text-xs text-white/50 uppercase tracking-wider">WhatsApp Admisi</p>
+                                            <p class="font-medium">+62 811 3999 066</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-[#009EA9]/20 rounded-full flex items-center justify-center text-[#009EA9]">
+                                            ✉️
+                                        </div>
+                                        <div>
+                                            <p class="text-xs text-white/50 uppercase tracking-wider">Email</p>
+                                            <p class="font-medium">pmb@primakara.ac.id</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-left" data-aos-delay="250" class="bg-white rounded-3xl p-8 md:p-10 shadow-2xl relative">
+                            <div class="absolute top-0 left-10 right-10 h-1.5 bg-[#009EA9] rounded-b-md"></div>
+                            
+                            <h3 class="text-[#1D2B58] text-2xl font-bold mb-2">Formulir Minat Studi</h3>
+                            <p class="text-slate-500 text-sm mb-8">Data kamu aman bersama kami. Silakan lengkapi data berikut.</p>
+
+                            <form action="#" method="POST" class="space-y-5">
+                                
+                                <div>
+                                    <label for="nama" class="block text-sm font-bold text-[#1D2B58] mb-2">Nama Lengkap</label>
+                                    <input type="text" id="nama" placeholder="Masukkan nama sesuai ijazah" 
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#009EA9]/50 focus:border-[#009EA9] transition-all duration-300">
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                    <div>
+                                        <label for="telepon" class="block text-sm font-bold text-[#1D2B58] mb-2">No. WhatsApp</label>
+                                        <input type="tel" id="telepon" placeholder="Contoh: 081234..." 
+                                            class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#009EA9]/50 focus:border-[#009EA9] transition-all duration-300">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-bold text-[#1D2B58] mb-2">Email Aktif</label>
+                                        <input type="email" id="email" placeholder="nama@email.com" 
+                                            class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#009EA9]/50 focus:border-[#009EA9] transition-all duration-300">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="peminatan" class="block text-sm font-bold text-[#1D2B58] mb-2">Pilihan Konsentrasi IT</label>
+                                    <div class="relative">
+                                        <select id="peminatan" 
+                                            class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 appearance-none focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#009EA9]/50 focus:border-[#009EA9] transition-all duration-300 cursor-pointer text-slate-600">
+                                            <option value="" disabled selected>Pilih salah satu...</option>
+                                            <option value="se">Software Engineering</option>
+                                            <option value="cs">Network & Cyber Security</option>
+                                            <option value="ds">AI & Data Science</option>
+                                        </select>
+                                        <div class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-slate-400">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="sekolah" class="block text-sm font-bold text-[#1D2B58] mb-2">Asal Sekolah</label>
+                                    <input type="text" id="sekolah" placeholder="Nama SMA/SMK" 
+                                        class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#009EA9]/50 focus:border-[#009EA9] transition-all duration-300">
+                                </div>
+
+                                <a href="#pendaftaran" 
+                                    class="w-full mt-4 bg-[#009EA9] text-white font-bold text-lg py-4 rounded-xl shadow-lg hover:bg-[#00828c] hover:shadow-xl hover:-translate-y-1 active:translate-y-0 transition-all duration-300 flex justify-center items-center gap-2 group">
+                                    Kirim Formulir
+                                    <span class="group-hover:translate-x-1 transition-transform">→</span>
+                                </a>
+                                
+                                <p class="text-center text-xs text-slate-400 mt-4">
+                                    Dengan menekan tombol kirim, Anda menyetujui kebijakan privasi kami.
+                                </p>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer data-aos="fade-up" data-aos-delay="250" class="bg-[#1D2B58] text-white py-12 px-6">
+            <div class="max-w-7xl mx-auto text-center space-y-4">
+                <p class="text-gray-400 italic">"Mendokumentasikan Masa Depan Lewat Karya"</p>
+                <div class="h-px bg-white/10 w-full my-8"></div>
+                <p class="text-sm">© 2026 Primakara University Exhibition. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100
+            });
+        </script>
+    </body>
+</html>
